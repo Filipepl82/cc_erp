@@ -30,7 +30,7 @@ class ProdutoController extends Controller{
             $this->redirect(URL_BASE."produto");
         }
         
-        $dados["produto"] = $produto;
+        $dados["produto"] = $produto;        
         $dados["categorias"] = Service::lista("categoria");
         $dados["unidades"] = Service::lista("unidade");
         $dados["view"] = "Produto/Create";
